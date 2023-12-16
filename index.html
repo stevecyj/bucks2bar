@@ -14,6 +14,7 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" />
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Bucks2Bar</title>
   </head>
 
@@ -30,7 +31,9 @@
           <a class="nav-link active" data-bs-toggle="tab" href="#data">Data</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#chart">Chart</a>
+          <a class="nav-link" id="chart-tab" data-bs-toggle="tab" href="#chart"
+            >Chart</a
+          >
         </li>
       </ul>
 
@@ -469,9 +472,7 @@
           </div>
         </div>
         <div id="chart" class="container tab-pane fade">
-          <br />
-          <h3>Chart</h3>
-          <p>這是 Chart 標籤的預設文字。</p>
+          <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>
