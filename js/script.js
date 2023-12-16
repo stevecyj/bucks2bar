@@ -97,3 +97,23 @@ document.getElementById("chart-tab").addEventListener("click", function () {
   // 在這裡運行您的代碼
   updateChart();
 });
+
+// document.getElementById("download").addEventListener("click", function () {
+//   var canvas = document.getElementById("myChart");
+//   var imgURL = canvas.toDataURL("image/png");
+
+//   var link = document.createElement("a");
+//   link.href = imgURL;
+//   link.download = "chart.png";
+//   link.click();
+// });
+
+function download() {
+  var canvas = document.getElementById("myChart");
+  var imgURL = canvas.toDataURL("image/png");
+
+  var link = document.createElement("a");
+  link.href = imgURL;
+  link.download = "chart.png";
+  link.click();
+}
