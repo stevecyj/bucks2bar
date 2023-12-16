@@ -89,6 +89,10 @@ give me the html for a bootstrap row that contains 2 columns, on mobile screen s
 
 下載圖表
 
+```jsx
+@workspace how can i download a canvas html element as an image?
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
